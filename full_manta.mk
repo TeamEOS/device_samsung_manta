@@ -37,9 +37,19 @@ PRODUCT_PROPERTY_OVERRIDES := \
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, device/samsung/manta/device.mk)
 
+$(call inherit-product, vendor/eos/config/common_full_tablet_wifionly.mk)
+# Copy Bootanimation
+PRODUCT_COPY_FILES += \
+vendor/eos/prebuilt/common/bootanimation/720.zip:system/media/bootanimation.zip
+
 PRODUCT_NAME := full_manta
 PRODUCT_DEVICE := manta
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Nexus 10
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_RESTRICT_VENDOR_FILES := false
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=mantaray \
+    BUILD_FINGERPRINT=google/mantaray/manta:4.4.2/KOT49H/937116:user/release-keys \
+    PRIVATE_BUILD_DESC="mantaray-user 4.4.2 KOT49H 937116 release-keys"
