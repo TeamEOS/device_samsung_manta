@@ -39,6 +39,12 @@ TARGET_CPU_VARIANT := cortex-a15
 TARGET_KERNEL_CONFIG := cyanogenmod_manta_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/manta
 
+# Build and optimization
+TARGET_GCC_VERSION_EXP := 4.8-linaro
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := 4.9-linaro-a15
+#ARCH_ARM_HIGH_OPTIMIZATION := true
+
+
 #Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
