@@ -1,0 +1,27 @@
+[
+    {
+        "repository": "vendor_samsung_manta",
+        "target_path": "vendor/samsung/manta",
+        "revision": "lp5.1"
+    },
+    {
+        "repository": "vendor_widevine",
+        "target_path": "vendor/widevine",
+        "revision": "lp5.1"
+    },
+    {
+        "repository": "vendor_broadcom",
+        "target_path": "vendor/broadcom",
+        "revision": "lp5.1"
+    },
+    {
+        "repository": "vendor_audience",
+        "target_path": "vendor/audience",
+        "revision": "lp5.1"
+    },
+    {
+        "repository": "kernel_samsung_manta",
+        "target_path": "kernel/samsung/manta",
+        "revision": "lp5.1"
+    }
+]
