@@ -1,0 +1,12 @@
+[
+    {
+        "repository": "vendor_samsung_manta",
+        "target_path": "vendor/samsung/manta",
+        "revision": "lp5.0"
+    },
+    {
+        "repository": "kernel_samsung_manta",
+        "target_path": "kernel/samsung/manta",
+        "revision": "lp5.0"
+    }
+]
