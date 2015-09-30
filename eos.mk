@@ -14,6 +14,10 @@ $(call inherit-product, vendor/eos/config/nfc_enhanced.mk)
 # Inherit device configuration
 $(call inherit-product, device/samsung/manta/full_manta.mk)
 
+# Copy Bootanimation
+PRODUCT_COPY_FILES += \
+vendor/eos/prebuilt/common/bootanimation/1080.zip:system/media/bootanimation.zip
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := manta
 PRODUCT_NAME := eos_manta
